@@ -149,5 +149,5 @@ In ACF, I set "select multiple values" to "no" (this is crucial so that post obj
 
 ![CPT-onomies ACF Post Object Metabox]({{ site.url }}/assets/acf-issue-metabox.png)
 
-I tried created a new Issue and also creating a new post and assigning it to the new Issue -
+I tried creating a new Issue and also creating a new post and assigning it to the new Issue -
 and it worked! No broken links, no unpredictable site lag, it just...worked.
