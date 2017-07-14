@@ -12,9 +12,9 @@ time and more, I decided it was time to get rid of the plugin.
 ![CPT-onomies deleted]({{ site.url }}/assets/cpt-onomies-deleted.png)
 
 The Wordpress site I was working on used CPT-onomies to create a custom Issue
-CPT-onomy and the site had over 2,000 articles which were each assigned an Issue.
-In lieu of allowing CPT-onomies to create the Issue CPT-onomy, I registered a
-regular post type called Issue. To register the issue post type, I used
+CPT-onomy and it had over 2,000 articles which were each assigned an Issue.
+In lieu of allowing CPT-onomies to create the Issue CPT-onomy, I decided to register a
+regular post type with the same slug. To register the post type, I used
 [this site](https://generatewp.com/post-type/) to generate the desired configuration
 (similar to how I would have changed post type settings in CPT-onomies) and
 then added the code it produced to functions.php in the main Wordpress theme directory.
@@ -87,7 +87,7 @@ function issue_generator() {
 add_action( 'init', 'issue_generator', 0 );
 {% endhighlight %}
 
-And, after deactivating CPT-onomies, it worked! All of my old Issue posts appeared
+And, after deactivating CPT-onomies, my site still worked! All of my old Issue posts appeared
 as a regular custom post type rather than as a CPT-onomy. Furthermore, on the single
 Issue pages the children of the Issue post that I had assigned using CPT-onomies
 still appeared. Why? Well, CPT-onomies was simply using regular post meta data
@@ -150,4 +150,4 @@ In ACF, I set "select multiple values" to "no" (this is crucial so that post obj
 ![CPT-onomies ACF Post Object Metabox]({{ site.url }}/assets/acf-issue-metabox.png)
 
 I tested out created a new Issue and also creating a new post and assigning it the new Issue -
-and it worked! No broken links, no unpredictable site lag, it just worked. 
+and it worked! No broken links, no unpredictable site lag, it just worked.
