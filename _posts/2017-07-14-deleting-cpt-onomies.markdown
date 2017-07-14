@@ -138,7 +138,7 @@ In addition to the Issue column on the posts page, I wanted to be able to be abl
 to Issue field on each individual post during editing. For this, I needed a custom
 metabox that allowed me to select an Issue and save the Issue ID in the field
 '_custom_post_type_onomies_relationship'. I decided to use Advanced Custom Fields (ACF),
-a popular and lightweight Wordpress plugin and create a metabox with a [post object
+a popular and lightweight Wordpress plugin, and create a metabox with a [post object
 field](https://www.advancedcustomfields.com/resources/post-object/).
 
 ![CPT-onomies ACF Field]({{ site.url }}/assets/acf-cpt-onomies-field.png)
@@ -149,5 +149,5 @@ In ACF, I set "select multiple values" to "no" (this is crucial so that post obj
 
 ![CPT-onomies ACF Post Object Metabox]({{ site.url }}/assets/acf-issue-metabox.png)
 
-I tested out created a new Issue and also creating a new post and assigning it the new Issue -
-and it worked! No broken links, no unpredictable site lag, it just worked.
+I tried created a new Issue and also creating a new post and assigning it to the new Issue -
+and it worked! No broken links, no unpredictable site lag, it just...worked.
