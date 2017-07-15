@@ -134,8 +134,7 @@ function add_issue_columns($columns){
 }
 {% endhighlight %}
 
-In addition to the Issue column on the posts page, I wanted to be able to be able to change
-to Issue field on each individual post during editing. For this, I needed a custom
+In addition to the Issue column on the posts page, I wanted to be able to be able to change the Issue field on each individual post during editing. For this, I needed a custom
 metabox that allowed me to select an Issue and save the Issue ID in the field
 '_custom_post_type_onomies_relationship'. I decided to use Advanced Custom Fields (ACF),
 a popular and lightweight Wordpress plugin, and create a metabox with a [post object
